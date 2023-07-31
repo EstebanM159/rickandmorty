@@ -8,6 +8,8 @@ import { SharedComponentsComponent } from './shared-components/shared-components
 import { HeaderComponent } from './shared-components/header/header.component';
 import { FooterComponent } from './shared-components/footer/footer.component';
 import { CardComponent } from './shared-components/card/card.component';
+import { ListaPersonajesComponent } from './personajes/lista-personajes/lista-personajes.component';
+import { PersonajesModule } from './personajes/personajes.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { CardComponent } from './shared-components/card/card.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    PersonajesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
