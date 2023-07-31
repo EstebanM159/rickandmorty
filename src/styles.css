@@ -1,1 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+  --bgInicio:#2D4356;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+img{
+  display: block;
+  width: 100%;
+}
+.contenedor {
+  max-width: 120rem;
+  width: 85%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
