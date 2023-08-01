@@ -1,6 +1,12 @@
-.card-container {
+.card {
+  background-color: var(--rosaClaro);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 2rem 0;
+}
+
+.card img {
+  width: 50%;
 }

@@ -1,11 +1,11 @@
-.logo-container{
+.logo-container {
   height: 5rem;
-  background-color: var(--bgInicio);
+  background-color: var(--bgHeader);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.logo-container img{
+.logo-container img {
   width: 12rem;
 }

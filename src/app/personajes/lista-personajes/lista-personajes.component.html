@@ -1,1 +1,6 @@
-<p>lista-personajes works!</p>
+<div class="card-container">
+
+  <div *ngFor="let pj of listaPersonajes">
+    <app-card [dataPj]="pj"></app-card>
+  </div>
+</div>

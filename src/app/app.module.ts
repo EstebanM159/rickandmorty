@@ -7,7 +7,6 @@ import { InicioComponent } from './inicio/inicio.component';
 import { SharedComponentsComponent } from './shared-components/shared-components.component';
 import { HeaderComponent } from './shared-components/header/header.component';
 import { FooterComponent } from './shared-components/footer/footer.component';
-import { CardComponent } from './shared-components/card/card.component';
 import { ListaPersonajesComponent } from './personajes/lista-personajes/lista-personajes.component';
 import { PersonajesModule } from './personajes/personajes.module';
 
@@ -18,7 +17,6 @@ import { PersonajesModule } from './personajes/personajes.module';
     SharedComponentsComponent,
     HeaderComponent,
     FooterComponent,
-    CardComponent
   ],
   imports: [
     BrowserModule,

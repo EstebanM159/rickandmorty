@@ -1,24 +1,32 @@
-:root{
-  --bgInicio:#2D4356;
+:root {
+  --bgInicio: #2D4356;
+  --bgHeader: #435B66;
+  --rosaOscuro: #A76F6F;
+  --rosaClaro: #EAB2A0;
 }
+
 html {
   font-size: 62.5%;
   box-sizing: border-box;
 
 }
-body{
+
+body {
   margin: 0;
   padding: 0;
 }
+
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
-img{
+
+img {
   display: block;
   width: 100%;
 }
+
 .contenedor {
   max-width: 120rem;
   width: 85%;
