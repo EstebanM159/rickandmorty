@@ -4,9 +4,14 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 2rem 0;
+  padding: 2rem;
+  padding-bottom: 0;
+  border-radius:1rem ;
 }
-
+.card p{
+  color:#000 ;
+  font-family: sans-serif;
+}
 .card img {
-  width: 50%;
+  border-radius: 1rem;
 }
