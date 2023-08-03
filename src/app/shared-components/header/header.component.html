@@ -1,3 +1,10 @@
 <div class="logo-container">
   <img src="../../../assets/Rick-and-Morty.png" alt="logo">
+  <div class="bars-menu">
+    <a (click)="abrir()" href="#" class="button"><img src="../../../assets/menu.png" alt=""></a>
+  </div>
 </div>
+<nav *ngIf="activo" [ngClass]="{'slide-out-bottom':activo, 'slide-out-top':!activo}" class="nav-container">
+  <a href="">Personajes</a><a href="">Episodios</a><a href="">Locacion</a>
+  <!-- <a href="#" class="button" (click)="cerrar()"><img src="../../../assets/x.png" alt=""></a> -->
+</nav>
