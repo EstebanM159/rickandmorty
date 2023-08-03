@@ -33,57 +33,34 @@
   color: #92ee82;
   font-family: sans-serif;
 }
-/* media .nav-container{
-    display: flex;
+
+@media (min-width: 400px) {
+  .nav-container {
+      display: flex;
       align-items: center;
       justify-content: space-evenly;
+    }
+}
 
-} */
 
-/* POLEMICO PERO FUNCIONA */
+/* POLEMICO PERO FUNCIONA ANIMACION DEL NAV */
 .bg-nav{
   background-color: var(--bgHeader);
 }
 .slide-out-bottom {
-  animation: slide-out-bottom 0.5s ease-in both;
+  animation: slide-out-bottom 0.5s ease-in ;
 }
 @keyframes slide-out-bottom {
   0% {
-    visibility: 0;
-    opacity: 0;
+    opacity: 1;
     height: 0;
   }
 
-  50% {
-    visibility: 0;
-    opacity: 0;
-  }
 
   100% {
-    visibility: 1;
     opacity: 1;
     height: 8rem;
   }
 }
-.slide-out-top {
-  animation: slide-out-top 0.1s ease-out  both;
-}
 
-@keyframes slide-out-top {
-  0% {
-    visibility: 1;
-    opacity: 1;
-    height: 10rem;
-  }
 
-  50% {
-    visibility: 1;
-    opacity: 1;
-  }
-
-  100% {
-    visibility: 0;
-    opacity: 0;
-    height: 0;
-  }
-}

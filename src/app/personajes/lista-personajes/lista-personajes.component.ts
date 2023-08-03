@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnChanges, OnInit } from '@angular/core';
 import { ListaPersonajesService } from '../lista-personajes.service';
 import { Result } from 'src/app/models/characters';
 @Component({
@@ -9,19 +9,30 @@ import { Result } from 'src/app/models/characters';
 export class ListaPersonajesComponent implements OnInit {
   constructor(private consulta: ListaPersonajesService) { }
   listaPersonajes: Result[] = [];
+  cantPaginas : number = 0;
+  pagActual: number = 1;
   ngOnInit() {
-    this.cargarPersonajes();
-    this.traerUnPj();
+    this.cargarUnaPagina();
   }
-
-  cargarPersonajes() {
-    this.consulta.getCharacters().subscribe(info => {
+  aumentar(){
+      if(this.pagActual<this.cantPaginas){
+        this.pagActual++;
+        this.cargarUnaPagina();
+      }
+  }
+  restar(){
+    if(this.pagActual>1){
+      this.pagActual--;
+      this.cargarUnaPagina();
+    }
+  }
+  cargarUnaPagina(){
+    this.consulta.getCharactersByPage(this.pagActual).subscribe(info=>{
+      this.cantPaginas = info.info.pages;
       this.listaPersonajes = info.results;
     })
   }
-  traerUnPj() {
-    this.consulta.getCharacterById().subscribe(ch => {
-      console.log(ch.name)
-    })
-  }
+
+
+
 }

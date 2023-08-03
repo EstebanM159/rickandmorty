@@ -8,11 +8,13 @@ import {  Result, Root } from '../models/characters';
 export class ListaPersonajesService {
 
   constructor(private http:HttpClient) { }
-
+  getCharactersByPage(pag:number):Observable<Root>{
+    return this.http.get<Root>(`https://rickandmortyapi.com/api/character/?page=${pag}`);
+  }
   getCharacters():Observable<Root>{
    return this.http.get<Root>('https://rickandmortyapi.com/api/character');
   }
-  getCharacterById():Observable<Result>{
-    return this.http.get<Result>('https://rickandmortyapi.com/api/character/2')
+  getCharacterById(id:number):Observable<Result>{
+    return this.http.get<Result>(`https://rickandmortyapi.com/api/character/${id}`);
   }
 }

@@ -1,3 +1,7 @@
 <div class="card-container contenedor">
-    <app-card *ngFor="let pj of listaPersonajes" [dataPj]="pj"></app-card>
+  <app-card *ngFor="let pj of listaPersonajes" [dataPj]="pj"></app-card>
+</div>
+<div class="botones">
+  <a href="#"  (click)="restar()"><img src="../../../assets/chevrons-left.png" alt="atras"></a>
+  <a (click)="aumentar()" href="#"><img src="../../../assets/chevrons-right.png" alt="adelante"></a>
 </div>

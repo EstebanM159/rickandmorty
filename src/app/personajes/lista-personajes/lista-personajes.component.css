@@ -6,3 +6,33 @@
   gap: 2rem;
   padding: 2rem 0;
 }
+.botones{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem 0;
+}
+.botones a img{
+  height: 2rem;
+}
+@media (min-width: 400px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media (min-width: 720px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .botones a img {
+    height: 3rem;
+  }
+}
+@media (min-width: 900px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
