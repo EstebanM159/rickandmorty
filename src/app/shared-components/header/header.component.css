@@ -13,14 +13,19 @@
 .bars-menu a{
   color: aliceblue;
 }
+@media (min-width: 568px) {
+  .bars-menu{
+      display: none;
+  }
+  .logo-container{
+    justify-content: center;
+  }
+}
 .button img{
   width: 2rem;
 }
 .nav-container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  display: none;
   gap: 1rem;
   padding: .6rem 0;
   font-weight: 900;
@@ -34,24 +39,33 @@
   font-family: sans-serif;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 568px) {
   .nav-container {
       display: flex;
       align-items: center;
       justify-content: space-evenly;
+      flex-direction: row;
     }
 }
 
 
 /* POLEMICO PERO FUNCIONA ANIMACION DEL NAV */
+.dnone{
+  display: none;
+}
 .bg-nav{
   background-color: var(--bgHeader);
 }
 .slide-out-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   animation: slide-out-bottom 0.5s ease-in ;
 }
 @keyframes slide-out-bottom {
   0% {
+
     opacity: 1;
     height: 0;
   }

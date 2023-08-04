@@ -4,7 +4,8 @@
     <a (click)="abrir()" href="#" class="button"><img src="../../../assets/menu.png" alt=""></a>
   </div>
 </div>
-<nav *ngIf="activo" [ngClass]="{'slide-out-bottom':activo}" class="nav-container">
-  <a href="">Personajes</a><a href="">Episodios</a><a href="">Locacion</a>
-  <!-- <a href="#" class="button" (click)="cerrar()"><img src="../../../assets/x.png" alt=""></a> -->
+<nav [ngClass]="{'slide-out-bottom':activo }" class="nav-container">
+  <a href="">Personajes</a>
+  <a routerLink="/lista-episodios">Episodios</a>
+  <a href="">Locacion</a>
 </nav>

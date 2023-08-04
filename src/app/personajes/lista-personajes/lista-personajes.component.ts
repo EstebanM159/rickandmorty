@@ -1,4 +1,4 @@
-import { Component, OnChanges, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ListaPersonajesService } from '../lista-personajes.service';
 import { Result } from 'src/app/models/characters';
 @Component({
@@ -14,15 +14,15 @@ export class ListaPersonajesComponent implements OnInit {
   ngOnInit() {
     this.cargarUnaPagina();
   }
-  aumentar(){
+  aumentar(num:number){
       if(this.pagActual<this.cantPaginas){
-        this.pagActual++;
+        this.pagActual=this.pagActual + num;
         this.cargarUnaPagina();
       }
   }
-  restar(){
+  restar(num:number){
     if(this.pagActual>1){
-      this.pagActual--;
+      this.pagActual= this.pagActual - num;
       this.cargarUnaPagina();
     }
   }

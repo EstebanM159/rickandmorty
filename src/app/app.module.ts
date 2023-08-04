@@ -7,9 +7,8 @@ import { InicioComponent } from './inicio/inicio.component';
 import { SharedComponentsComponent } from './shared-components/shared-components.component';
 import { HeaderComponent } from './shared-components/header/header.component';
 import { FooterComponent } from './shared-components/footer/footer.component';
-import { ListaPersonajesComponent } from './personajes/lista-personajes/lista-personajes.component';
 import { PersonajesModule } from './personajes/personajes.module';
-
+import { EpisodiosModuleModule } from './episodes-module/episodes-module.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +21,8 @@ import { PersonajesModule } from './personajes/personajes.module';
     BrowserModule,
     AppRoutingModule,
     PersonajesModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    EpisodiosModuleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
