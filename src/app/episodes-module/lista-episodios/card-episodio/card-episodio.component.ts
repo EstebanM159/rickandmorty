@@ -7,11 +7,25 @@ import { EpisodiosService } from '../../episodios.service';
   styleUrls: ['./card-episodio.component.css']
 })
 export class CardEpisodioComponent implements OnInit{
-  @Input() dataEpisodio?:ResultE;
+  @Input() dataEpisodio?:ResultE ;
   personajesEpisodio:string[]=[];
+  personajesDelEpisodio:string[]=[];
   constructor(private consulta:EpisodiosService){}
   ngOnInit() {
-
+    this.cargarPersonajes();
   }
+
+  cargarPersonajes(){
+    if(this.dataEpisodio){
+      this.personajesEpisodio = this.dataEpisodio.characters
+    }
+    for (let i = 0; i < this.personajesEpisodio.length; i++) {
+      this.consulta.getCharacterByUrl(this.personajesEpisodio[i]).subscribe(data=>{
+        this.personajesDelEpisodio.push(data.name);
+      })
+
+    }
+  }
+
 
 }

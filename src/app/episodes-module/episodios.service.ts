@@ -13,5 +13,7 @@ export class EpisodiosService {
   getAllEpisodes():Observable<RootE>{
     return this.http.get<RootE>("https://rickandmortyapi.com/api/episode");
   }
-
+  getCharacterByUrl(url:string):Observable<Result>{
+    return this.http.get<Result>(`${url}`);
+  }
 }
