@@ -11,9 +11,6 @@ export class ListaPersonajesService {
   getCharactersByPage(pag:number):Observable<Root>{
     return this.http.get<Root>(`https://rickandmortyapi.com/api/character/?page=${pag}`);
   }
-  getCharacters():Observable<Root>{
-   return this.http.get<Root>('https://rickandmortyapi.com/api/character');
-  }
   getCharacterById(id:number):Observable<Result>{
     return this.http.get<Result>(`https://rickandmortyapi.com/api/character/${id}`);
   }
