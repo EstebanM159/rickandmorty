@@ -3,12 +3,14 @@ import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import {  HttpClientModule } from '@angular/common/http';
 import { ListaEpisodiosComponent } from './lista-episodios/lista-episodios.component';
+import { CardEpisodioComponent } from './lista-episodios/card-episodio/card-episodio.component';
 
 
 
 @NgModule({
   declarations: [
-    ListaEpisodiosComponent
+    ListaEpisodiosComponent,
+    CardEpisodioComponent
   ],
   imports: [
     CommonModule,

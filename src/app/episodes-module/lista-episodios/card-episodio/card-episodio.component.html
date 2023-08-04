@@ -1,0 +1,7 @@
+<div class="card-episodio">
+  <h2>{{dataEpisodio?.episode}}</h2>
+  <p>{{dataEpisodio?.name}}</p>
+  <select>
+      <option *ngFor="let pj of dataEpisodio?.characters">{{pj}}</option>
+  </select>
+</div>

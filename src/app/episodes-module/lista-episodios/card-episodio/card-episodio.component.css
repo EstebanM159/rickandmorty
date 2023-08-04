@@ -1,0 +1,7 @@
+.card-episodio{
+  background-color: var(--rosaClaro);
+  padding: 2rem;
+  border-radius: 1rem;
+  font-family: sans-serif;
+  font-weight: 500;
+}
