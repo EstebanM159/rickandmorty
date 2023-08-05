@@ -1,0 +1,7 @@
+Cosas para agregar:
+  un hover a cada option en la card de episodios con los datos del pj
+  que al hacer click en el option redireccione al la pagina del pj
+
+  en la lista de Personajes falta redireccionar a pjDetails
+
+  todo el modulo de locaciones
