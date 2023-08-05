@@ -4,16 +4,19 @@ import { HttpClientModule } from '@angular/common/http';
 import { ListaPersonajesComponent } from './lista-personajes/lista-personajes.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { CardComponent } from './lista-personajes/card/card.component';
-
+import { PersonajeDetailsComponent } from './personaje-details/personaje-details.component';
+import { AppRoutingModule } from '../app-routing.module';
 
 
 @NgModule({
   declarations: [
     ListaPersonajesComponent,
-    CardComponent
+    CardComponent,
+    PersonajeDetailsComponent
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     CommonModule,
     HttpClientModule
   ],
