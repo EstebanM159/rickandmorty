@@ -11,6 +11,7 @@
 .card p{
   color:#000 ;
   font-family: sans-serif;
+  margin: 1rem 0;
 }
 .card img {
   border-radius: 1rem;

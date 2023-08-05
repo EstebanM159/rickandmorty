@@ -1,7 +1,8 @@
 <div class="card-episodio">
   <h2>{{dataEpisodio?.episode}}</h2>
-  <p>{{dataEpisodio?.name}}</p>
-  <select>
-      <option *ngFor="let pj of personajesDelEpisodio">{{pj}}</option>
+  <p>"{{dataEpisodio?.name}}"</p>
+  <select (click)="cargarPersonajes()"  >
+      <option class="f-option" selected disabled>Personajes</option>
+      <option disabled *ngFor="let pj of listaNombresPjs">{{pj}}</option>
   </select>
 </div>
