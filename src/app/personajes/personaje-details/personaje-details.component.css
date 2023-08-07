@@ -1,0 +1,12 @@
+.pjdetail-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-personaje{
+  background-color: aliceblue;
+  text-align: center;
+}
+.name-img img{
+  width: auto;
+}

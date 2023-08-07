@@ -2,6 +2,7 @@ import { Component , OnInit} from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 import { ListaPersonajesService } from '../lista-personajes.service';
+import { Result } from 'src/app/models/characters';
 @Component({
   selector: 'app-personaje-details',
   templateUrl: './personaje-details.component.html',
@@ -10,14 +11,14 @@ import { ListaPersonajesService } from '../lista-personajes.service';
 export class PersonajeDetailsComponent implements OnInit{
 constructor(private consulta:ListaPersonajesService, private rutaActiva:ActivatedRoute){}
 id:number=0;
+infoPj?:Result;
 ngOnInit() {
    this.id = this.rutaActiva.snapshot.params['id'];
-   console.log(this.id);
    this.extraerInfo();
 }
 extraerInfo(){
   this.consulta.getCharacterById(this.id).subscribe(data=>{
-    console.log(data);
+    this.infoPj=data;
   })
 }
 }

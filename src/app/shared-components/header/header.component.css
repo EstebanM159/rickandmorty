@@ -1,4 +1,6 @@
 .logo-container {
+  position: sticky;
+  top :0;
   height: 5rem;
   background-color: var(--bgInicio);
   display: flex;
@@ -41,39 +43,38 @@
 
 @media (min-width: 568px) {
   .nav-container {
+      position: fixed;
+      width: 100%;
       display: flex;
       align-items: center;
       justify-content: space-evenly;
       flex-direction: row;
+      border-radius: .4rem;
     }
 }
 
 
 /* POLEMICO PERO FUNCIONA ANIMACION DEL NAV */
-.dnone{
-  display: none;
-}
+
 .bg-nav{
   background-color: var(--bgHeader);
 }
 .slide-out-bottom {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  width: 100%;
+  position: fixed;
+  display: grid;
+  place-items: center;
   animation: slide-out-bottom 0.5s ease-in ;
 }
 @keyframes slide-out-bottom {
   0% {
-
-    opacity: 1;
     height: 0;
+    opacity: 0;
   }
-
-
   100% {
-    opacity: 1;
+
     height: 8rem;
+    opacity: 1;
   }
 }
 

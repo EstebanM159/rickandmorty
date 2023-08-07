@@ -6,3 +6,6 @@ Cosas para agregar:
   mostrar los datos en pjDetails
 
   todo el modulo de locaciones
+
+
+Arreglar la superposicion de los personajes con el nav
