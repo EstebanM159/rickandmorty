@@ -1,3 +1,9 @@
 .inicio-container {
   background-color: var(--bgHeader);
+
+}
+@media (min-width: 568px) {
+  .inicio-container{
+    padding-top: 2rem;
+  }
 }
