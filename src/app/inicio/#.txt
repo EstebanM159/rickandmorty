@@ -8,4 +8,3 @@ Cosas para agregar:
   todo el modulo de locaciones
 
 
-Arreglar la superposicion de los personajes con el nav

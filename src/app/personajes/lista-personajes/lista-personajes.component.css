@@ -6,6 +6,9 @@
   gap: 2rem;
   padding: 2rem 0;
 }
+.span{
+  font-family: sans-serif;
+}
 .botones{
   display: flex;
   justify-content: space-around;

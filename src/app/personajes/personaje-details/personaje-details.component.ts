@@ -11,6 +11,7 @@ import { Result } from 'src/app/models/characters';
 export class PersonajeDetailsComponent implements OnInit{
 constructor(private consulta:ListaPersonajesService, private rutaActiva:ActivatedRoute){}
 id:number=0;
+
 infoPj?:Result;
 ngOnInit() {
    this.id = this.rutaActiva.snapshot.params['id'];
@@ -20,5 +21,20 @@ extraerInfo(){
   this.consulta.getCharacterById(this.id).subscribe(data=>{
     this.infoPj=data;
   })
+}
+color(status?:string):string{
+  let clase:string="";
+    switch (status) {
+      case 'Alive':
+        clase = 'verde';
+      break;
+      case 'Dead':
+        clase = 'rojo';
+        break;
+         case 'unknown':
+        clase = 'gris';
+        break;
+    }
+return clase;
 }
 }

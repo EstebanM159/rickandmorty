@@ -1,8 +1,28 @@
 <div class="pjdetail-container">
-  <div class="card-personaje">
+  <div class="card-personaje contenedor">
     <div class="name-img">
       <h1>{{infoPj?.name}}</h1>
       <img src="https://rickandmortyapi.com/api/character/avatar/{{infoPj?.id}}.jpeg"  alt="">
     </div>
+    <div class="info-container">
+      <div class="info-text">
+        <span>Status: <span [ngClass]="color(infoPj?.status)" class="circulo"></span> {{infoPj?.status}}</span>
+        <span>Specie: {{infoPj?.species}}</span>
+        <span>Gender: {{infoPj?.gender}}</span>
+      </div>
+    </div>
 </div>
 
+<!-- id: number
+  name: string
+  status: string
+  species: string
+  type: string
+  gender: string
+  origin: Origin
+  location: Location
+  image: string
+  episode: string[]
+  url: string
+  created: string
+ -->
