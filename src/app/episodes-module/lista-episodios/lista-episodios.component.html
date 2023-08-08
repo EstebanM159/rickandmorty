@@ -1,4 +1,9 @@
 
+<div class="botones contenedor">
+  <a href="#" (click)="restar(1)"><img src="../../../assets/chevron-left.png" alt=""></a>
+  <span>{{pagActual}}</span>
+  <a href="#" (click)="aumentar(1)"><img src="../../../assets/chevron-right.png" alt=""></a>
+</div>
 <div class="episodios-container contenedor">
     <app-card-episodio id="app-card" *ngFor="let episodio of listaEpisodios" [dataEpisodio]="episodio"></app-card-episodio>
-</div>
+  </div>

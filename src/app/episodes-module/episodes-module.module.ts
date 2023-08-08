@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import {  HttpClientModule } from '@angular/common/http';
 import { ListaEpisodiosComponent } from './lista-episodios/lista-episodios.component';
 import { CardEpisodioComponent } from './lista-episodios/card-episodio/card-episodio.component';
+import { AppRoutingModule } from '../app-routing.module';
 
 
 
@@ -15,7 +16,8 @@ import { CardEpisodioComponent } from './lista-episodios/card-episodio/card-epis
   imports: [
     CommonModule,
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ]
 })
 export class EpisodiosModuleModule { }

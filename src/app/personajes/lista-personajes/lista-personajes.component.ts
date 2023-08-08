@@ -17,13 +17,14 @@ export class ListaPersonajesComponent implements OnInit {
   aumentar(num:number){
       if(this.pagActual<this.cantPaginas){
         this.pagActual=this.pagActual + num;
-        this.cargarUnaPagina();
+        console.log(this.pagActual);
+        // this.cargarUnaPagina();
       }
   }
   restar(num:number){
     if(this.pagActual>1){
       this.pagActual= this.pagActual - num;
-      this.cargarUnaPagina();
+      // this.cargarUnaPagina();
     }
   }
   cargarUnaPagina(){
