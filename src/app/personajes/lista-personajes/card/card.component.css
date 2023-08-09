@@ -11,8 +11,31 @@
 .card p{
   color:#000 ;
   font-family: sans-serif;
+  font-size: 1.5rem;
   margin: 1rem 0;
+  text-align: center;
+}
+.card p span{
+  text-align: center;
 }
 .card img {
   border-radius: 1rem;
 }
+.circulo {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+    .verde {
+      background-color: green;
+    }
+
+    .rojo {
+      background-color: red;
+    }
+
+    .gris {
+      background-color: gray;
+    }
+

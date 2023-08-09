@@ -1,6 +1,6 @@
 
   <a [routerLink]="['/personaje-details/',dataPj?.id]"  class="card">
     <img src="https://rickandmortyapi.com/api/character/avatar/{{dataPj?.id}}.jpeg" alt="">
-    <p>{{dataPj?.name}}</p>
+    <p>{{dataPj?.name}} | <span [ngClass]="color(dataPj?.status)" class="circulo"></span> {{dataPj?.status}}</p>
   </a>
 

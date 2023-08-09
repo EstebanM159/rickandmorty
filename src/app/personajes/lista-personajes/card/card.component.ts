@@ -8,14 +8,20 @@ import { Result } from 'src/app/models/characters';
 })
 export class CardComponent  {
   @Input() dataPj?: Result;
-  // public id:number=0;
-  // ngOnInit(): void {
-  //   this.extraerId();
-  // }
-  // extraerId(){
-  //   if(this.dataPj){
-  //     this.id = this.dataPj.id
-  //   }
-  // }
+color(status?:string):string{
+  let clase:string="";
+    switch (status) {
+      case 'Alive':
+        clase = 'verde';
+      break;
+      case 'Dead':
+        clase = 'rojo';
+        break;
+         case 'unknown':
+        clase = 'gris';
+        break;
+    }
+return clase;
+}
 }
 
