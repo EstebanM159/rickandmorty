@@ -15,7 +15,7 @@
   align-items: center;
   padding: 2rem 0;
 }
-.botones a img{
+.botones span img{
   height: 2rem;
 }
 @media (min-width: 400px) {
@@ -29,8 +29,9 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-  .botones a img {
+  .botones span img {
     height: 2.5rem;
+    cursor: pointer;
   }
 }
 @media (min-width: 900px) {

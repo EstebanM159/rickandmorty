@@ -12,7 +12,7 @@ export class ListaEpisodiosComponent implements OnInit{
   cantPaginas : number = 0;
   pagActual: number = 1;
   ngOnInit(){
-      // this.cargarUnaPagina();
+      this.cargarUnaPagina();
   }
   aumentar(num:number){
       if(this.pagActual<this.cantPaginas){
