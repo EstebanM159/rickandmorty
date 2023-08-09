@@ -1,0 +1,9 @@
+<div class="episodios-container contenedor">
+    <app-card-loc id="app-card" *ngFor="let locacion of listaLocaciones" [dataLocacion]="locacion"></app-card-loc>
+</div>
+<div class="botones contenedor">
+  <span (click)="restar(1)"><img src="../../../assets/chevron-left.png" alt=""></span>
+  <span>{{pagActual}}</span>
+  <span (click)="aumentar(1)"><img src="../../../assets/chevron-right.png" alt=""></span>
+</div>
+

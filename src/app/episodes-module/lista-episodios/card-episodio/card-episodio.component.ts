@@ -10,7 +10,13 @@ import { Result } from 'src/app/models/characters';
 export class CardEpisodioComponent {
   @Input() dataEpisodio?:ResultE ;
   listaNombresPjs:string[]=[];
+  cargado:boolean=false;
   constructor(private consulta:EpisodiosService){}
+   validarCarga(){
+    if(!this.cargado){
+      this.cargarPersonajes();
+    }
+  }
   cargarPersonajes(){
     if(this.dataEpisodio ){
       for (let i = 0; i < this.dataEpisodio.characters.length; i++) {
@@ -18,6 +24,7 @@ export class CardEpisodioComponent {
           this.listaNombresPjs.push(data.name);
         })
       }
+      this.cargado=true;
     }
   }
 

@@ -4,11 +4,7 @@
   align-items: center;
   height: 95vh;
 }
-@media (min-width:568px){
-  .pjdetail-container{
-    padding: 10rem;
-  }
-}
+
 h1,span{
   font-family: sans-serif;
 }
@@ -24,12 +20,17 @@ h1{
   flex-direction: column;
 }
 @media (min-width:568px) {
+  h1{
+    font-size: 1.8rem;
+    padding-bottom:1rem;
+  }
   .card-personaje {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
     gap: 2rem;
     padding: 2rem;
+    padding-bottom: 3.5rem;
   }
 }
 .name-img img{

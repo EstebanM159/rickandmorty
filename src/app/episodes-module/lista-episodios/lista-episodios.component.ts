@@ -28,7 +28,6 @@ export class ListaEpisodiosComponent implements OnInit{
   }
   cargarUnaPagina(){
     this.consulta.getEpisodeByPage(this.pagActual).subscribe(info=>{
-      console.log(info);
       this.cantPaginas = info.info.pages;
       this.listaEpisodios = info.results;
     })

@@ -9,6 +9,7 @@ import { HeaderComponent } from './shared-components/header/header.component';
 import { FooterComponent } from './shared-components/footer/footer.component';
 import { PersonajesModule } from './personajes/personajes.module';
 import { EpisodiosModuleModule } from './episodes-module/episodes-module.module';
+import { ModuloLocacionesModule } from './modulo-locaciones/modulo-locaciones.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,8 @@ import { EpisodiosModuleModule } from './episodes-module/episodes-module.module'
     AppRoutingModule,
     PersonajesModule,
     BrowserAnimationsModule,
-    EpisodiosModuleModule
+    EpisodiosModuleModule,
+    ModuloLocacionesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

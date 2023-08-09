@@ -16,4 +16,6 @@ export class EpisodiosService {
   getEpisodeByPage(pag:number):Observable<RootE>{
     return this.http.get<RootE>(`https://rickandmortyapi.com/api/episode/?page=${pag}`);
   }
+
+
 }

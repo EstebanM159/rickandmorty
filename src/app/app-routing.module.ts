@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ListaPersonajesComponent } from './personajes/lista-personajes/lista-personajes.component';
 import { ListaEpisodiosComponent } from './episodes-module/lista-episodios/lista-episodios.component';
 import { PersonajeDetailsComponent } from './personajes/personaje-details/personaje-details.component';
+import { ListaLocacionesComponent } from './modulo-locaciones/lista-locaciones/lista-locaciones.component';
 const routes: Routes = [
   {
     path:'',
@@ -20,6 +21,10 @@ const routes: Routes = [
   {
     path: 'personaje-details/:id',
     component: PersonajeDetailsComponent
+  },
+  {
+    path: 'lista-locaciones',
+    component: ListaLocacionesComponent
   }
 ];
 
