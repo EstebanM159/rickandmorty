@@ -1,4 +1,4 @@
-<div class="logo-container">
+<!-- <div class="logo-container">
   <a routerLink="/lista-personajes">
     <img src="../../../assets/Rick-and-Morty.png" alt="logo">
   </a>
@@ -10,4 +10,20 @@
   <a href="">Personajes</a>
   <a routerLink="/lista-episodios">Episodios</a>
   <a routerLink="/lista-locaciones">Locacion</a>
-</nav>
+</nav> -->
+
+
+<mat-toolbar>
+  <span class="button" href="#">
+    <img src="../../../assets/Rick-and-Morty.png" alt="">
+  </span>
+  <span class="example-spacer"></span>
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <a mat-menu-item href="">Personajes</a>
+    <a mat-menu-item routerLink="/lista-episodios">Episodios</a>
+    <a mat-menu-item routerLink="/lista-locaciones">Locacion</a>
+  </mat-menu>
+</mat-toolbar>

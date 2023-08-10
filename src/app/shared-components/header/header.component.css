@@ -1,4 +1,4 @@
-.logo-container {
+/* .logo-container {
   position: sticky;
   top :0;
   height: 5rem;
@@ -23,9 +23,7 @@
     justify-content: center;
   }
 }
-.button img{
-  width: 2rem;
-}
+
 .nav-container{
   display: none;
   gap: 1rem;
@@ -51,12 +49,12 @@
       flex-direction: row;
       border-radius: .4rem;
     }
-}
+} */
 
 
 /* POLEMICO PERO FUNCIONA ANIMACION DEL NAV */
 
-.bg-nav{
+/* .bg-nav{
   background-color: var(--bgHeader);
 }
 .slide-out-bottom {
@@ -76,6 +74,13 @@
     height: 8rem;
     opacity: 1;
   }
+} */
+
+
+.example-spacer {
+  flex: 1 1 auto;
 }
-
-
+.button img {
+  width:30%;
+  max-width: 50rem;
+}

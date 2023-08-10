@@ -1,6 +1,15 @@
 
-  <a [routerLink]="['/personaje-details/',dataPj?.id]"  class="card">
+  <!-- <a [routerLink]="['/personaje-details/',dataPj?.id]"  class="card">
     <img src="https://rickandmortyapi.com/api/character/avatar/{{dataPj?.id}}.jpeg" alt="">
     <p>{{dataPj?.name}} | <span [ngClass]="color(dataPj?.status)" class="circulo"></span> {{dataPj?.status}}</p>
-  </a>
+  </a> -->
 
+
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{dataPj?.name}}</mat-card-title>
+      <mat-card-subtitle><span [ngClass]="color(dataPj?.status)" class="circulo"></span> {{dataPj?.status}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="https://rickandmortyapi.com/api/character/avatar/{{dataPj?.id}}.jpeg" alt="">
+  </mat-card>

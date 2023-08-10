@@ -6,6 +6,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { CardComponent } from './lista-personajes/card/card.component';
 import { PersonajeDetailsComponent } from './personaje-details/personaje-details.component';
 import { AppRoutingModule } from '../app-routing.module';
+import {MatCardModule} from '@angular/material/card';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { AppRoutingModule } from '../app-routing.module';
     BrowserModule,
     AppRoutingModule,
     CommonModule,
-    HttpClientModule
+    HttpClientModule,
+    MatCardModule
   ],
   exports:[ListaPersonajesComponent]
 })
