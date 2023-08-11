@@ -17,6 +17,7 @@
 }
 .botones span img{
   height: 2rem;
+  image-rendering: optimizeQuality;
 }
 @media (min-width: 568px) {
   .card-container {
@@ -39,4 +40,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
+}
+.mat-mdc-card-title{
+  font-size: 10px;
 }

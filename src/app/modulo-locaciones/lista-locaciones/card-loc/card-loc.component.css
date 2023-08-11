@@ -12,7 +12,7 @@
 
 h2 {
   font-size: 1.5rem;
-  color: #92ee82;
+  color: var(--verde);
 }
 .titulo{
   text-transform: uppercase;
@@ -32,5 +32,5 @@ select {
 
 select option {
   background-color: var(--bgHeader);
-  color: #92ee82;
+  color: var(--verde);
 }
