@@ -6,10 +6,7 @@
 
 
   <mat-card class="example-card">
-    <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title>{{dataPj?.name}}</mat-card-title>
-      <mat-card-subtitle><span [ngClass]="color(dataPj?.status)" class="circulo"></span> {{dataPj?.status}}</mat-card-subtitle>
-    </mat-card-header>
+      <mat-card-title style="text-align: center; padding: 1rem 0;">{{dataPj?.name}}</mat-card-title>
     <img mat-card-image src="https://rickandmortyapi.com/api/character/avatar/{{dataPj?.id}}.jpeg" alt="">
+    <mat-card-subtitle style="padding: 1rem 0; text-align: center;"><span [ngClass]="color(dataPj?.status)" class="circulo"></span> {{dataPj?.status}}</mat-card-subtitle>
   </mat-card>

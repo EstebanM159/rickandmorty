@@ -18,13 +18,13 @@
 .botones span img{
   height: 2rem;
 }
-@media (min-width: 400px) {
+@media (min-width: 568px) {
   .card-container {
     display: grid;
     grid-template-columns: repeat(2,1fr);
   }
 }
-@media (min-width: 720px) {
+@media (min-width: 850px) {
   .card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -34,7 +34,7 @@
     cursor: pointer;
   }
 }
-@media (min-width: 900px) {
+@media (min-width: 1200px) {
   .card-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

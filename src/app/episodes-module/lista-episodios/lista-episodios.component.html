@@ -2,8 +2,7 @@
 <div class="episodios-container contenedor">
     <app-card-episodio id="app-card" *ngFor="let episodio of listaEpisodios" [dataEpisodio]="episodio"></app-card-episodio>
 </div>
-<div class="botones contenedor">
-  <span (click)="restar(1)"><img src="../../../assets/chevron-left.png" alt=""></span>
-  <span>{{pagActual}}</span>
-  <span (click)="aumentar(1)"><img src="../../../assets/chevron-right.png" alt=""></span>
-</div>
+<mat-paginator color="warn" [length]="count" [pageSizeOptions]="[20]" (page)="cargarPagina($event)"
+  aria-label="Select page">
+</mat-paginator>
+

@@ -6,7 +6,7 @@ import { ListaEpisodiosComponent } from './lista-episodios/lista-episodios.compo
 import { CardEpisodioComponent } from './lista-episodios/card-episodio/card-episodio.component';
 import { AppRoutingModule } from '../app-routing.module';
 
-
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 @NgModule({
   declarations: [
@@ -17,7 +17,8 @@ import { AppRoutingModule } from '../app-routing.module';
     CommonModule,
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatPaginatorModule
   ]
 })
 export class EpisodiosModuleModule { }

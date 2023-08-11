@@ -1,10 +1,5 @@
 <div class="card-container contenedor">
   <app-card *ngFor="let pj of listaPersonajes" [dataPj]="pj"></app-card>
 </div>
-<div class="botones contenedor">
-  <span (click)="restar(5)"><img src="../../../assets/chevrons-left.png" alt="atras"></span>
-  <span (click)="restar(1)"><img src="../../../assets/chevron-left.png" alt=""></span>
-  <span>{{pagActual}}</span>
-  <span (click)="aumentar(1)"><img src="../../../assets/chevron-right.png" alt=""></span>
-  <span (click)="aumentar(5)" ><img src="../../../assets/chevrons-right.png" alt="adelante"></span>
-</div>
+<mat-paginator color="warn" [length]="count" [pageSizeOptions]="[20]" (page)="cargarPagina($event)" aria-label="Select page">
+</mat-paginator>

@@ -5,7 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from '../app-routing.module';
 import { ListaLocacionesComponent } from './lista-locaciones/lista-locaciones.component';
 import { CardLocComponent } from './lista-locaciones/card-loc/card-loc.component';
-
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 
 @NgModule({
@@ -17,7 +17,8 @@ import { CardLocComponent } from './lista-locaciones/card-loc/card-loc.component
     CommonModule,
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatPaginatorModule
   ]
 })
 export class ModuloLocacionesModule { }

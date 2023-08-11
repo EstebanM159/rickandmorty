@@ -7,7 +7,7 @@ import { CardComponent } from './lista-personajes/card/card.component';
 import { PersonajeDetailsComponent } from './personaje-details/personaje-details.component';
 import { AppRoutingModule } from '../app-routing.module';
 import {MatCardModule} from '@angular/material/card';
-
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,7 @@ import {MatCardModule} from '@angular/material/card';
     AppRoutingModule,
     CommonModule,
     HttpClientModule,
-    MatCardModule
+    MatCardModule,MatPaginatorModule
   ],
   exports:[ListaPersonajesComponent]
 })

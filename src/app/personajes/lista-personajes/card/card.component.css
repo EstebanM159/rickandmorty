@@ -1,6 +1,7 @@
 .example-card {
-  min-width: 250px;
+  min-height: 330px;
 }
+
 .circulo {
   display: inline-block;
   height: 10px;
