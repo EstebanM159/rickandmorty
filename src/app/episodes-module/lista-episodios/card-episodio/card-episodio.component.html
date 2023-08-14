@@ -1,8 +1,18 @@
-<div class="card-episodio">
+<!-- <div class="card-episodio">
   <h2>{{dataEpisodio?.episode}}</h2>
   <p>"{{dataEpisodio?.name}}"</p>
   <select (click)="validarCarga()"  >
       <option class="f-option" selected disabled>Personajes</option>
       <option disabled *ngFor="let pj of listaNombresPjs">{{pj}}</option>
   </select>
-</div>
+</div> -->
+
+  <mat-card class="example-card">
+    <a [routerLink]="['/episodio-details/',dataEpisodio?.id]" class="card">
+      <mat-card-title style="text-align: center; padding: .5rem 0; padding-bottom: 0; font-size: 17px ;color:#fff;">
+        {{dataEpisodio?.name}}
+      </mat-card-title>
+      <mat-card-subtitle style="padding: .5rem 0; text-align: center;">{{dataEpisodio?.episode}}</mat-card-subtitle>
+    </a>
+  </mat-card>
+

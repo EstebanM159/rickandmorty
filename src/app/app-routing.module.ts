@@ -4,6 +4,7 @@ import { ListaPersonajesComponent } from './personajes/lista-personajes/lista-pe
 import { ListaEpisodiosComponent } from './episodes-module/lista-episodios/lista-episodios.component';
 import { PersonajeDetailsComponent } from './personajes/personaje-details/personaje-details.component';
 import { ListaLocacionesComponent } from './modulo-locaciones/lista-locaciones/lista-locaciones.component';
+import { EpisodioDetailsComponent } from './episodes-module/episodio-details/episodio-details.component';
 const routes: Routes = [
   {
     path:'',
@@ -25,6 +26,10 @@ const routes: Routes = [
   {
     path: 'lista-locaciones',
     component: ListaLocacionesComponent
+  },
+  {
+    path: 'episodio-details/:id',
+    component:EpisodioDetailsComponent
   }
 ];
 

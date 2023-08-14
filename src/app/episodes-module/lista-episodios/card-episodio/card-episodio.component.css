@@ -1,4 +1,4 @@
-.card-episodio{
+/* .card-episodio{
   display: flex;
   gap: .5rem;
   flex-direction: column;
@@ -25,4 +25,4 @@ select{
 select option{
   background-color: var(--bgHeader);
   color:var(--verde);
-}
+} */
