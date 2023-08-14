@@ -41,6 +41,3 @@
     grid-template-columns: repeat(4, 1fr);
   }
 }
-.mat-mdc-card-title{
-  font-size: 10px;
-}

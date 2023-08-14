@@ -1,12 +1,7 @@
-
-  <!-- <a [routerLink]="['/personaje-details/',dataPj?.id]"  class="card">
-    <img src="https://rickandmortyapi.com/api/character/avatar/{{dataPj?.id}}.jpeg" alt="">
-    <p>{{dataPj?.name}} | <span [ngClass]="color(dataPj?.status)" class="circulo"></span> {{dataPj?.status}}</p>
-  </a> -->
-
-
   <mat-card class="example-card">
-      <mat-card-title style="text-align: center; padding: 1rem 0; font-size: 17px;">{{dataPj?.name}}</mat-card-title>
-    <img mat-card-image src="https://rickandmortyapi.com/api/character/avatar/{{dataPj?.id}}.jpeg" alt="">
-    <mat-card-subtitle style="padding: 1rem 0; text-align: center;"><span [ngClass]="color(dataPj?.status)" class="circulo"></span> {{dataPj?.status}}</mat-card-subtitle>
+    <a [routerLink]="['/personaje-details/',dataPj?.id]" class="card">
+      <img mat-card-image src="https://rickandmortyapi.com/api/character/avatar/{{dataPj?.id}}.jpeg" alt="">
+      <mat-card-title style="text-align: center; padding: .5rem 0; padding-bottom: 0; font-size: 17px ;color:#fff;">{{dataPj?.name}}</mat-card-title>
+      <mat-card-subtitle style="padding: .5rem 0; text-align: center;"><span [ngClass]="color(dataPj?.status)" class="circulo"></span> {{dataPj?.status}}</mat-card-subtitle>
+    </a>
   </mat-card>
