@@ -1,0 +1,13 @@
+ img{
+  height: 5rem;
+  width: 5rem;
+}
+
+ .item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+h1{
+  text-align: center;
+}

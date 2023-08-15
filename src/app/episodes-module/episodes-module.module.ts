@@ -8,7 +8,7 @@ import { AppRoutingModule } from '../app-routing.module';
 import { EpisodioDetailsComponent } from './episodio-details/episodio-details.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatTreeModule } from '@angular/material/tree';
-
+import {MatListModule} from '@angular/material/list';
 import { MatPaginatorModule } from '@angular/material/paginator';
 
 @NgModule({
@@ -23,7 +23,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     AppRoutingModule,
     MatPaginatorModule,
     MatCardModule,
-    MatTreeModule
+    MatTreeModule,MatListModule
   ]
 })
 export class EpisodiosModuleModule { }

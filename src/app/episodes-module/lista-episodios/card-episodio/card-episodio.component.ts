@@ -1,7 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ResultE } from 'src/app/models/episodes';
 import { EpisodiosService } from '../../episodios.service';
-import { Result } from 'src/app/models/characters';
 @Component({
   selector: 'app-card-episodio',
   templateUrl: './card-episodio.component.html',
@@ -9,8 +8,6 @@ import { Result } from 'src/app/models/characters';
 })
 export class CardEpisodioComponent {
   @Input() dataEpisodio?:ResultE ;
-
-  cargado:boolean=false;
   constructor(private consulta:EpisodiosService){}
 
 
