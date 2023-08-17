@@ -1,4 +1,4 @@
-_Proyecto de Rick and Morty en Angular con Angular Material_
+**Proyecto de Rick and Morty en Angular con Angular Material**
 
 ¡Bienvenidos al emocionante mundo del proyecto de Rick and Morty desarrollado en Angular! En esta aplicación, he creado una experiencia única que te permite explorar y descubrir información fascinante sobre los personajes, episodios y lugares de la famosa serie de televisión "Rick and Morty". Todo esto es posible gracias a la API de Rick and Morty, que nos proporciona datos detallados sobre este extravagante universo.
 
@@ -16,7 +16,7 @@ _CARACTERÍSTICAS_
 
 ◉ Diseño Responsivo: La aplicación está diseñada para adaptarse a diferentes dispositivos, lo que te permite explorar el universo de Rick and Morty en tu computadora o dispositivo móvil.
 
-_TECNOLOGÍAS UTILIZADAS_
+TECNOLOGÍAS UTILIZADAS
 
 ◉ Angular: Utilicé el potente framework Angular para desarrollar la interfaz de usuario y gestionar los componentes de la aplicación.
 
