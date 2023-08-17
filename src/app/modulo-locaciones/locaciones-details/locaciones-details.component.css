@@ -1,18 +1,23 @@
-img{
+.alturaCambiada{
+  height: 90vh;
+}
+img {
   height: 5rem;
   width: 5rem;
 }
 
-.item{
-   border-bottom: 1px solid #c9c9c9 ;
+.item {
+  border-bottom: 1px solid #c9c9c9;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 2rem;
 }
-.item:last-of-type{
-  border-bottom:none ;
+
+.item:last-of-type {
+  border-bottom: none;
 }
-h1{
+
+h1 {
   text-align: center;
 }

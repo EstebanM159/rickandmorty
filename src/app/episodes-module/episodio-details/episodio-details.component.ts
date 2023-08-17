@@ -15,6 +15,7 @@ constructor(private consulta:EpisodiosService,  private rutaActiva:ActivatedRout
 id:number=0;
 unEpisodio?:ResultE;
 listaPjs:Result[]=[];
+claseH:boolean=false;
 ngOnInit() {
   this.id = this.rutaActiva.snapshot.params['id'];
   this.extraerInfo();
@@ -22,14 +23,23 @@ ngOnInit() {
 
 extraerInfo(){
   this.consulta.getEpisodeById(this.id).subscribe(data=>{
+    this.claseH = false;
     this.unEpisodio=data;
     if(this.unEpisodio ){
       for (let i = 0; i < this.unEpisodio.characters.length; i++) {
         this.consulta.getCharacterByUrl(this.unEpisodio.characters[i]).subscribe(info=>{
           this.listaPjs[i] = info;
+           if(this.listaPjs.length>6){
+               this.claseH=true;
+             }
+
+
         })
 
       }
     }
   })
-}}
+}
+
+}
+

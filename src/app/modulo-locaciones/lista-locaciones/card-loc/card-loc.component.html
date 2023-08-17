@@ -1,10 +1,16 @@
-<div class="card-episodio">
+<!-- <div class="card-episodio">
+  <a [routerLink]="['/locaciones-details/',dataLocacion?.id]" class="card">
   <h2>{{dataLocacion?.name}}</h2>
   <p><span class="titulo">Type:</span> {{dataLocacion?.type}}</p>
   <p><span class="titulo">Dimension:</span> {{dataLocacion?.dimension}}</p>
-  <select (click)="validarCarga()">
-    <option class="f-option" selected disabled>Residentes</option>
-     <option disabled *ngFor="let pj of listaNombresPjs">{{pj}}</option>
-  </select>
-</div>
+  </a>
+</div> -->
 
+  <mat-card class="example-card">
+    <a [routerLink]="['/locaciones-details/',dataLocacion?.id]" class="card">
+      <mat-card-title style="text-align: center; padding: .5rem 0; padding-bottom: 0; font-size: 17px ;color:#fff;">
+        {{dataLocacion?.name}}
+      </mat-card-title>
+      <mat-card-subtitle style="padding: .5rem 0; text-align: center;">{{dataLocacion?.dimension}}</mat-card-subtitle>
+    </a>
+  </mat-card>

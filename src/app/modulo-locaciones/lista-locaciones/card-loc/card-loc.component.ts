@@ -11,19 +11,5 @@ export class CardLocComponent {
   listaNombresPjs:string[]=[];
   cargado:boolean=false;
   constructor(private consulta:LocacionesService){}
-  validarCarga(){
-    if(!this.cargado){
-      this.cargarPersonajes();
-    }
-  }
-  cargarPersonajes(){
-    if(this.dataLocacion){
-      for (let i = 0; i < this.dataLocacion.residents.length; i++) {
-        this.consulta.getCharacterByUrl(this.dataLocacion.residents[i]).subscribe(data=>{
-          this.listaNombresPjs.push(data.name);
-        })
-      }
-      this.cargado=true;
-    }
-  }
+
 }
