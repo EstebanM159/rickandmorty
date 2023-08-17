@@ -1,27 +1,29 @@
-# Rickandmorty
+_Proyecto de Rick and Morty en Angular con Angular Material_
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.7.
+¡Bienvenidos al emocionante mundo del proyecto de Rick and Morty desarrollado en Angular! En esta aplicación, he creado una experiencia única que te permite explorar y descubrir información fascinante sobre los personajes, episodios y lugares de la famosa serie de televisión "Rick and Morty". Todo esto es posible gracias a la API de Rick and Morty, que nos proporciona datos detallados sobre este extravagante universo.
 
-## Development server
+Si desea ingresar haga click en el siguiente enlace -> rick-and-morty-ten-xi.vercel.app
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+_CARACTERÍSTICAS_
 
-## Code scaffolding
+◉ Exploración de Personajes: Navega a través de una extensa lista de personajes, desde los icónicos Rick y Morty hasta los personajes secundarios más peculiares.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+◉ Detalles de Personajes: Haz clic en cualquier personaje para ver detalles como su nombre, especie, estado y origen.
 
-## Build
+◉ Exploración de Episodios: Descubre los episodios de la serie, con información sobre su número, nombre y fecha de emisión.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+◉ Información sobre Lugares: Explora los lugares donde ocurren las aventuras, con datos sobre su nombre y tipo.
 
-## Running unit tests
+◉ Diseño Responsivo: La aplicación está diseñada para adaptarse a diferentes dispositivos, lo que te permite explorar el universo de Rick and Morty en tu computadora o dispositivo móvil.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+_TECNOLOGÍAS UTILIZADAS_
 
-## Running end-to-end tests
+◉ Angular: Utilicé el potente framework Angular para desarrollar la interfaz de usuario y gestionar los componentes de la aplicación.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+◉ Angular Material: Aproveché las capacidades de diseño y UI de Angular Material para crear una interfaz atractiva y coherente.
 
-## Further help
+◉ API de Rick and Morty: La aplicación se conecta a la API de Rick and Morty para obtener los datos sobre los personajes, episodios y lugares de la serie.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+◉ CSS3: He aplicado estilos personalizados utilizando CSS3 para dar vida al mundo de Rick and Morty en la interfaz.
+
+Este proyecto fue creado por Esteban Montenegro.
