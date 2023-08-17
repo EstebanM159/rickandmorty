@@ -2,7 +2,7 @@
 
 ¡Bienvenidos al emocionante mundo del proyecto de Rick and Morty desarrollado en Angular! En esta aplicación, he creado una experiencia única que te permite explorar y descubrir información fascinante sobre los personajes, episodios y lugares de la famosa serie de televisión "Rick and Morty". Todo esto es posible gracias a la API de Rick and Morty, que nos proporciona datos detallados sobre este extravagante universo.
 
-Si desea ingresar haga click en el siguiente enlace -> **[Rick and Morty](rick-and-morty-ten-xi.vercel.app)**
+Si desea ingresar haga click en el siguiente enlace -> **[Rick and Morty]([rick-and-morty-ten-xi.vercel.app](https://rick-and-morty-ten-xi.vercel.app/))**
 
 **CARACTERÍSTICAS**
 
