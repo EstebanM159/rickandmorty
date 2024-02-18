@@ -9,10 +9,25 @@ img{
   align-items: center;
   justify-content: space-between;
   padding: 0 2rem;
+  cursor: pointer;
+}
+.item:hover{
+  color: #fff;
 }
 .item:last-of-type{
   border-bottom:none ;
 }
 h1{
   text-align: center;
+}
+.button{
+  padding: 1rem 2rem;
+  background-color: #2D4356;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 1rem
+}
+.button::hover{
+  column-rule: #2D4356;
 }

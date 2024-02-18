@@ -1,5 +1,5 @@
 <div class="card-container contenedor">
-  <app-card *ngFor="let pj of listaPersonajes" [dataPj]="pj"></app-card>
+  <app-card style="min-height: 20rem;" *ngFor="let pj of listaPersonajes" [dataPj]="pj"></app-card>
 </div>
 <mat-paginator color="warn" [length]="count" [pageSizeOptions]="[20]" (page)="cargarPagina($event)" aria-label="Select page">
 </mat-paginator>

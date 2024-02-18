@@ -1,6 +1,8 @@
 
 
-<div [ngClass]="{'alturaCambiada':!claseH}" class="pjdetail-container contenedor">
+<div [ngClass]="{'alturaCambiada':!claseH}" class="pjdetail-container contenedor" >
+  <button class="button" routerLink="../../lista-episodios">Volver</button>
+
   <mat-card class="example-card">
     <mat-card-title style="text-align: center; padding: .5rem 0; padding-bottom: 0; font-size: 17px ;color:#fff;">
       {{unEpisodio?.name}}

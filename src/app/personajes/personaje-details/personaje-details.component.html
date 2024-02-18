@@ -1,20 +1,4 @@
-<!-- <div class="pjdetail-container">
-  <div class="card-personaje contenedor">
-    <div class="name-img">
-      <h1>{{infoPj?.name}}</h1>
-      <img src="https://rickandmortyapi.com/api/character/avatar/{{infoPj?.id}}.jpeg"  alt="">
-    </div>
-    <div class="info-container">
-      <div class="info-text">
-        <span>Status: <span [ngClass]="color(infoPj?.status)" class="circulo"></span> {{infoPj?.status}}</span>
-        <span>Specie: {{infoPj?.species}}</span>
-        <span>Gender: {{infoPj?.gender}}</span> -->
-        <!-- <span>Origin: {{origen?.name}}</span> -->
-        <!-- <span>Location: {{location?.name}} </span>
-      </div>
-    </div>
-    <a href="#"><img class="img" src="../../../assets/x.png" alt=""></a>
-  </div> -->
+
 <div class="pjdetail-container contenedor">
   <mat-card class="example-card">
       <img mat-card-image src="https://rickandmortyapi.com/api/character/avatar/{{infoPj?.id}}.jpeg" alt="">
@@ -28,19 +12,6 @@
         <mat-card-content style="text-align: start; color: #c9c9c9;">Location: {{location?.name}}</mat-card-content>
     </div>
   </mat-card>
+  <button class="button" routerLink="../../lista-personajes">Volver</button>
 </div>
 
-
-<!-- id: number
-  name: string
-  status: string
-  species: string
-  type: string
-  gender: string
-  origin: Origin
-  location: Location
-  image: string
-  episode: string[]
-  url: string
-  created: string
- -->
